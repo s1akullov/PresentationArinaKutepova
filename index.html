@@ -420,6 +420,14 @@
             margin: 30px 0;
             font-weight: bold;
             font-size: 1.3em;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .closing-slide .link:hover {
+            background: #f0f0f0;
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255,255,255,0.3);
         }
 
         /* ===== АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ ===== */
@@ -617,14 +625,6 @@
                 font-size: 0.9em;
             }
 
-            /* QR Section */
-            .qr-box {
-                width: 200px;
-                height: 200px;
-                font-size: 3em;
-                margin: 20px auto;
-            }
-
             /* Closing slide */
             .closing-slide h2 {
                 font-size: 2em;
@@ -637,9 +637,9 @@
 
             .closing-slide .link {
                 padding: 15px 25px;
-                font-size: 0.9em;
+                font-size: 0.85em;
                 margin: 20px 0;
-                word-break: break-word;
+                word-break: break-all;
             }
 
             .emoji-large {
@@ -697,8 +697,8 @@
             <div class="emoji">🧠💜</div>
             <h1>Мой психологический помощник</h1>
             <div class="subtitle">Ваше личное пространство для заботы о себе</div>
-            <div class="content">
-                <p>📱 Веб-приложение для самопомощи и эмоционального благополучия</p>
+            <div class="content" style="font-size: 1.8em; margin-top: 40px; color: white; text-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+                <p><strong>📱 Веб-приложение для самопомощи и эмоционального благополучия</strong></p>
             </div>
         </div>
 
@@ -795,7 +795,7 @@
                         <li>Пол: 70% женщины, 30% мужчины</li>
                         <li>Образование: высшее</li>
                         <li>Доход: средний+</li>
-                        <li>Города: Москва, СПб, МСК+</li>
+                        <li>Города: Москва, Санкт-Петербург, Ростов-на-Дону</li>
                     </ul>
                 </div>
                 <div class="column">
@@ -920,10 +920,10 @@
                 </div>
             </div>
             <h3 style="margin-top: 40px;">🔍 Умные инсайты:</h3>
-            <div class="content">
+            <div class="content" style="font-size: 1.1em;">
                 <p>💡 "Вы чаще всего испытываете спокойствие (33% записей)"</p>
                 <p>📅 "В четверг вы склонны чувствовать себя хуже"</p>
-                <p>⚡ "Ваши эмоции интенсивны (8.5/10) — попробуйте практики"</p>
+                <p>⚡ "Ваши эмоции интенсивны (8.5/10)"</p>
             </div>
         </div>
 
@@ -963,7 +963,7 @@
                 </div>
             </div>
             <div class="highlight-box" style="margin-top: 40px;">
-                🎬 Каждая практика с анимацией и голосовыми подсказками
+                🎬 Каждая практика с анимацией
             </div>
         </div>
 
@@ -1367,7 +1367,7 @@
                 <div class="card">
                     <div class="icon">🌍</div>
                     <h4>Локализация</h4>
-                    <p>Английский<br>Украинский<br>Другие языки</p>
+                    <p>Английский<br>Другие языки</p>
                 </div>
                 <div class="card">
                     <div class="icon">💎</div>
@@ -1380,16 +1380,13 @@
         <!-- Слайд 20: Призыв к действию -->
         <div class="slide closing-slide">
             <h2>Попробуйте прямо сейчас! 🚀</h2>
-            <div class="qr-section">
-                <div class="qr-box">📱</div>
-                <div class="content">
-                    <p style="font-size: 0.9em; margin: 20px 0;">Отсканируйте QR-код или перейдите по ссылке:</p>
-                </div>
+            <div class="content" style="margin: 60px 0;">
+                <p style="font-size: 1.2em; margin-bottom: 30px;">Перейдите по ссылке:</p>
+                <a href="https://s1akulov.github.io/psychological_assistant/" target="_blank" class="link" style="text-decoration: none; display: inline-block;">
+                    s1akulov.github.io/psychological_assistant
+                </a>
             </div>
-            <div class="link">
-                s1akulov.github.io/psychological_assistant
-            </div>
-            <div class="content" style="margin-top: 40px; font-size: 1.2em;">
+            <div class="content" style="margin-top: 60px; font-size: 1.3em;">
                 <p>✨ Сделайте первую запись эмоций</p>
                 <p>🧘 Попробуйте дыхательную практику</p>
                 <p>📱 Добавьте на главный экран iOS</p>
@@ -1402,6 +1399,7 @@
             <h2>Спасибо за внимание!</h2>
             <div class="content" style="margin-top: 50px;">
                 <p><strong>Заботьтесь о себе каждый день</strong> 💜</p>
+                <p style="margin-top: 60px; font-size: 1.4em;"><strong>Работу выполняла:<br>Кутепова Арина</strong></p>
                 <p style="margin-top: 40px; font-size: 1.2em;">Контакты:</p>
                 <p>GitHub: github.com/s1akulov/psychological_assistant</p>
                 <p>Web: s1akulov.github.io/psychological_assistant</p>
